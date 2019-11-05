@@ -44,7 +44,7 @@ func main() {
 
 	// For loop
 	for i := 0; i <= 10; i++ {
-		// Send a pseudo random number, within [0,n), on channel of s
+		// Send on channel of s, a pseudo random number, within [0,n)
 		s.channel <- rand.Intn(100)
 	}
 	// Println
